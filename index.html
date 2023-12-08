@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+.phases-text .p1.active{
+   display: block;
+}
+.phases-text .p1{
+  display: none;
+}
+</style>
+<title>Pandu</title>
+</head>
+<body>
+
+<h2>Search Menu</h2>
+<p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+
+<div class="row phases">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li class="html active"><a href="#">HTML</a></li>
+      <li class="css"><a href="#">CSS</a></li>
+      <li class="p"><a href="#">JavaScript</a></li>
+      <li class="p"><a href="#">PHP</a></li>
+      <li class="p"><a href="#">Python</a></li>
+      <li class="p"><a href="#">jQuery</a></li>
+      <li class="p"><a href="#">SQL</a></li>
+      <li class="p"><a href="#">Bootstrap</a></li>
+      <li class="p"><a href="#">Node.js</a></li>
+      <li class="p"><a href="#">pandu</a></li>
+      <li class="p"><a href="#">ranga</a></li>
+      <li class="p"><a href="#">reddy</a></li>
+      <li class="p"><a href="#">Pothula</a></li>
+      <li class="p"><a href="#">Patterns</a></li>
+      <li class="p"><a href="#">patt</a></li>
+    </ul>
+  </div>
+  <div class="right phases-text" style="background-color: #ddd;">
+    <div class="htmlp p1 active">
+    <h2>Page Content-HTML</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="cssp p1">
+    <h2>Page Content-CSS</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="javap p1">
+    <h2>Page Content-JAVASCRIPT</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="phpp p1">
+    <h2>Page Content-PHP</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="pythonp p1">
+    <h2>Page Content-PYTHON</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="jqueryp p1">
+    <h2>Page Content-JQUERY</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="sqlp p1">
+    <h2>Page Content-SQL</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="bootp p1">
+    <h2>Page Content-BOOTSTRAP</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="nodep p1">
+    <h2>Page Content-NODE.JS</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+    <div class="pandup p1">
+    <h2>Page Content-PANDU</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+    </div>
+  </div>
+</div> 
+<?php
+echo "ilove u";
+?>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+A=document.querySelector(".cssp");
+a=document.querySelector(".css");
+B=document.querySelector(".htmlp");
+b=document.querySelector(".html");
+
+/*p=document.querySelectorAll(".p");
+p1=document.querySelectorAll(".p1");
+
+p.addEventListener("click",()=>{
+  p1[i].style.display="block";
+})*/
+
+/*a.addEventListener("click",()=>{
+  A.style.display="block";
+  B.style.display="none";
+})
+b.addEventListener("click",()=>{
+  B.style.display="block";
+  A.style.display="none";
+})*/
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
